@@ -10,4 +10,4 @@ In this report, there are four models for image classification, using two CNNs, 
 On the Jupyter Notebook there are all the steps to run the four models.
 
  
-
+Used ChatGPT, free version, for review the grammar in the report and for debug fixing on code (load dataset from folders, load pre-trained model, DAG SVM implementation).
