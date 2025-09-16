@@ -14,7 +14,7 @@ class ShallowCNN(nn.Module):
         super(ShallowCNN, self).__init__()
         
         # Convolutional layers
-        self.conv1 = nn.Conv2d(3, 8, kernel_size=3, stride=1, padding=1)
+        self.conv1 = nn.Conv2d(1, 8, kernel_size=3, stride=1, padding=1)
         self.conv2 = nn.Conv2d(8, 16, kernel_size=3, stride=1, padding=1)
         self.conv3 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
         
@@ -72,7 +72,7 @@ class ImprovedCNN(nn.Module):
         super(ImprovedCNN, self).__init__()
         
         # Convolutional layers with varying filter sizes
-        self.conv1 = nn.Conv2d(3, 16, kernel_size=3, stride=1, padding=1)
+        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
         self.bn1 = nn.BatchNorm2d(16)
         
         self.conv2 = nn.Conv2d(16, 32, kernel_size=5, stride=1, padding=2)
